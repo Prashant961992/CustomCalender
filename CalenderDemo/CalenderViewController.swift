@@ -55,7 +55,7 @@ class CalenderViewController: UIViewController {
         currentMonth = month;
         currentYear = year;
         
-        calenderCollectionView.allowsMultipleSelection = true
+        calenderCollectionView.allowsMultipleSelection = false
         calenderCollectionView.selectItem(at: nil, animated: true, scrollPosition: [])
         let strMonth = arrMonth[month-1]
         lblMonthdisplay.text = "\(strMonth)-\(year)"
